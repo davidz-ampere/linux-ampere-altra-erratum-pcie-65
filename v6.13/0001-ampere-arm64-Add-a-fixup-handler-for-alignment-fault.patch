@@ -519,6 +519,7 @@ index 0000000000000..86d6c62aac5b9
 +			else
 +				data = sign_extend64(data, datasize - 1);
 +		}
++		pt_regs_write_reg(regs, t, data);
 +	}
 +
 +	return 0;
